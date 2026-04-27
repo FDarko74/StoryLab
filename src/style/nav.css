@@ -1,0 +1,83 @@
+@import url(global.css);
+
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  width: 80vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 7rem;
+  z-index: 100;
+  top: 20px;
+  left: 10%;
+  border-radius: 100px;
+}
+
+.navbar ul {
+  display: inherit;
+  align-items: center;
+}
+
+.navbar li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--ThirdC);
+  font: var(--font-nav);
+  padding: 12px 15px;
+  margin-inline: 10px;
+  transition: all 0.2s ease;
+}
+
+.navbar li:hover {
+  border-bottom: 3px solid var(--mainC);
+  a {
+    color: var(--mainC);
+  }
+}
+
+.navbar li:nth-child(3) {
+  background: linear-gradient(90deg, #974df9 0%, #5c30df 100%);
+  padding: 0.9rem 2rem;
+  border-radius: 28px;
+  a {
+    color: var(--BackC);
+  }
+}
+
+.navbar li:nth-child(3):hover {
+  background: #5c30df;
+  border-bottom: none;
+  transform: translateY(-3px);
+  a {
+    font-weight: bold;
+  }
+}
+
+.navbar img {
+  width: 5.5rem;
+}
+
+.social-icons {
+  display: inherit;
+  position: relative;
+  gap: 1rem;
+  left: 3rem;
+}
+
+.social-icons img {
+  width: 1.5rem;
+}
+.button {
+  transition: all 0.3s ease;
+}
+
+.button a {
+  transition: color 0.3s ease;
+}
+
+.button-active {
+  transition: all 0.3s ease;
+}

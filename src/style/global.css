@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../assets/Background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+:root {
+  /* Colors */
+  --mainC: #7546b6;
+  --BackC: white;
+  --ThirdC: Black;
+
+  /* fonts */
+  --font-h1: bolder 2rem "Poppins", sans-serif;
+  --font-p: normal 1rem "Poppins", sans-serif;
+  --font-nav: normal 1.1rem "Poppins", sans-serif;
+  --font-h2: "Poppins", sans-serif;
+  --font-nav2: normal 0.9rem "Poppins", sans-serif;
+}
