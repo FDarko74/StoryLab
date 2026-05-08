@@ -1,0 +1,55 @@
+@import url(global.css);
+
+.employees{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.employees h1{
+    font: var(--font-Emp);
+    margin-bottom: 2rem;
+    color: var(--mainC);
+}
+
+.Members{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.Member{
+  display: inherit;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.Member img{
+    /* 24 / 33 */
+    width: 20rem; 
+    height: 28rem;
+}
+
+.Member h3{
+    position: relative;
+    bottom: 4rem;
+    font: var(--font-Mem);
+}
+
+.Member a{
+    position: relative;
+    bottom: 4.5rem;
+    font: var(--font-ins);
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.Member a:hover{
+    color: var(--mainC);
+    text-decoration: underline;
+    font: bolder;
+}
