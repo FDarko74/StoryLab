@@ -22,8 +22,11 @@ body {
   --font-p: normal 1rem "Poppins", sans-serif;
   --font-nav: normal 1.1rem "Poppins", sans-serif;
   --font-h2: "Poppins", sans-serif;
+  --font-plan: normal 2rem "Poppins", sans-serif;
   --font-nav2: normal 0.9rem "Poppins", sans-serif;
   --font-Emp: bolder 2.5rem "Poppins", sans-serif;
   --font-Mem: bold 1.6rem "Poppins", sans-serif;
   --font-ins: normal 1rem "Poppins", sans-serif;
+  --font-h1: bolder 3rem "Poppins", sans-serif;
+  --font-h3: bold 1.8rem "Poppins", sans-serif;
 }
