@@ -1,0 +1,57 @@
+@import url(global.css);
+
+footer {
+  background-color: var(--mainC);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-inline: 10rem;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+footer div {
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+}
+
+footer h1 {
+  color: var(--BackC);
+  font: var(--font-h1F);
+}
+
+footer strong {
+  font: var(--font-strong);
+}
+
+footer div p {
+  color: var(--BackC);
+  font: var(--font-pF);
+  width: 50%;
+  margin-inline: 1rem;
+}
+
+footer div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2rem;
+}
+
+footer div ul h3 {
+  color: var(--BackC);
+  font: var(--font-h3F);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+footer div ul li {
+  margin-bottom: 0.2rem;
+}
+
+footer div ul li a {
+  color: var(--BackC);
+  font: var(--font-a);
+  text-decoration: none;
+}

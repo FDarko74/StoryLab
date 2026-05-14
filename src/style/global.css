@@ -18,8 +18,12 @@ body {
   --ThirdC: Black;
 
   /* fonts */
-  --font-h1: bolder 2rem "Poppins", sans-serif;
+  --font-h1: bolder 3rem "Poppins", sans-serif;
   --font-p: normal 1rem "Poppins", sans-serif;
+  --font-p2: normal 1.3rem "Poppins", sans-serif;
+  --font-pF: lighter 1.2rem "Poppins", sans-serif;
+  --font-p3: bold 2rem "Poppins", sans-serif;
+  --font-p4: lighter 1.8rem "Poppins", sans-serif;
   --font-nav: normal 1.1rem "Poppins", sans-serif;
   --font-h2: "Poppins", sans-serif;
   --font-plan: normal 2rem "Poppins", sans-serif;
@@ -27,6 +31,9 @@ body {
   --font-Emp: bolder 2.5rem "Poppins", sans-serif;
   --font-Mem: bold 1.6rem "Poppins", sans-serif;
   --font-ins: normal 1rem "Poppins", sans-serif;
-  --font-h1: bolder 3rem "Poppins", sans-serif;
+  --font-h1F: normal 2rem "Poppins", sans-serif;
+  --font-strong: bold 2.5rem "Poppins", sans-serif;
   --font-h3: bold 1.8rem "Poppins", sans-serif;
+  --font-h3F: bold 1.5rem "Poppins", sans-serif;
+  --font-a: lighter 1rem "Poppins", sans-serif;
 }
