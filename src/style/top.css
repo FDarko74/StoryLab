@@ -68,3 +68,7 @@ video{
 /* Linha de baixo: proporções diferentes */
 .foto.pequena { flex: 1; }
 .foto.grande  { flex: 2; }
+
+.button{
+  cursor: pointer;
+}

@@ -16,41 +16,45 @@
     <nav class="navbar">
       <img src="src/assets/Icons/Logo.svg" alt="Logo StoryLab" />
       <ul>
-        <li><a href="">Início</a></li>
+        <li><a href="#home">Início</a></li>
         <li><a href="">Novidades</a></li>
-        <li><a href="">Orçamentos</a></li>
+        <li><a href="#budget">Orçamentos</a></li>
       </ul>
       <div class="social-icons">
-        <img src="src/assets/Icons/instagram.svg" alt="Instagram" />
-        <img src="src/assets/Icons/facebook.svg" alt="Facebook" />
-        <img src="src/assets/Icons/whatsapp.svg" alt="WhatsApp" />
-        <img src="src/assets/Icons/tik-tok.svg" alt="TikTok" />
+        <img
+          src="src/assets/Icons/instagram.svg"
+          alt="Instagram"
+          id="instagram"
+        />
+        <img src="src/assets/Icons/facebook.svg" alt="Facebook" id="facebook" />
+        <img src="src/assets/Icons/whatsapp.svg" alt="WhatsApp" id="whatsapp" />
+        <img src="src/assets/Icons/tik-tok.svg" alt="TikTok" id="tiktok" />
       </div>
     </nav>
 
     <main>
       <!-- Home -->
-      <div class="home">
+      <div class="home" id="home">
         <img src="src/assets/Logo Home.svg" id="logo" alt="" />
         <img src="src/assets/Icons.svg" alt="" />
         <nav class="nav-pills">
           <div class="button button-active">
             <img src="src/assets/Icons/Highlights.svg" alt="" />
-            <a href="#">
+            <a>
               <!-- ícone -->
               Vídeos bombando!
             </a>
           </div>
           <div class="button">
             <img src="src/assets/Icons/Story.svg" alt="" />
-            <a href="#">
+            <a>
               <!-- ícone -->
               Nossa história!
             </a>
           </div>
           <div class="button">
             <img src="src/assets/Icons/Photos.svg" alt="" />
-            <a href="#">
+            <a>
               <!-- ícone -->
               Imagens
             </a>
@@ -59,7 +63,7 @@
       </div>
 
       <!-- vídeos -->
-      <div class="top videos">
+      <div class="top videos" id="videos">
         <video
           src="src/videos/Video 1.MP4"
           controls
@@ -84,7 +88,7 @@
       </div>
 
       <!-- História -->
-      <div class="top history">
+      <div class="top history hiddens" id="history">
         <h1>Nossa História</h1>
         <p>
           A <b>StoryLab Ilha Criativa</b> S&J nasce da vontade de transformar
@@ -108,7 +112,7 @@
       </div>
 
       <!-- Imagens -->
-      <div class="top galeria">
+      <div class="top galeria hiddens" id="galery">
         <div class="linha">
           <div class="foto">
             <img src="/src/assets/img/img 1.png" alt="Foto 1" />
@@ -155,7 +159,7 @@
       </div>
 
       <!-- Oraçamentos -->
-      <div class="Budget">
+      <div class="Budget" id="budget">
         <div class="title">
           <img src="src/assets/Icons/orcamento.svg" />
           <h1>Nossos Orçamentos</h1>
@@ -174,6 +178,18 @@
               <li class="x">Gravação com drone</li>
             </ul>
             <span>(Serviços adicionais: a negociar)</span>
+            <button
+              id="core"
+              class="plan-button"
+              onclick="
+                window.open(
+                  'https://wa.me/5592991770223?text=Ol%C3%A1%21%20Gostaria%20de%20contratar%20o%20plano%20Core',
+                  '_blank',
+                )
+              "
+            >
+              <p>Seja Core!</p>
+            </button>
           </div>
           <div class="item">
             <div class="title">
@@ -190,6 +206,17 @@
               <li class="x">Animação de elementos gráficos</li>
             </ul>
             <span>(Serviços adicionais: a negociar)</span>
+            <button
+              class="plan-button"
+              onclick="
+                window.open(
+                  'https://wa.me/5592991770223?text=Ol%C3%A1%21%20Gostaria%20de%20contratar%20o%20plano%20Pro',
+                  '_blank',
+                )
+              "
+            >
+              <p>Seja Pro!</p>
+            </button>
           </div>
           <div class="item">
             <div class="title">
@@ -206,10 +233,31 @@
               <li class="ok">Animação de elementos gráficos</li>
               <li class="ok">Animação de logo</li>
             </ul>
-            <span>(Serviços adicionais: a negociar)</span>
+            <span>(Serviços adicionais: a negociar)</span
+            ><button
+              class="plan-button"
+              onclick="
+                window.open(
+                  'https://wa.me/5592991770223?text=Ol%C3%A1%21%20Gostaria%20de%20contratar%20o%20plano%20Elite',
+                  '_blank',
+                )
+              "
+            >
+              <p>Seja Elite!</p>
+            </button>
           </div>
         </div>
-        <h2><strong>Personalize</strong> seu plano também!</h2>
+        <button
+          class="plan-button personalize"
+          onclick="
+            window.open(
+              'https://wa.me/5592991770223?text=Ol%C3%A1%21%20Gostaria%20de%20personalizar%20um%20plano%20pr%C3%B3prio',
+              '_blank',
+            )
+          "
+        >
+          <p>Personalize seu plano também!</p>
+        </button>
         <img src="src/assets/Mouse.png" id="mouse" />
       </div>
 
@@ -264,16 +312,28 @@
           </p>
           <ul>
             <h3>Ajuda</h3>
-            <li><a href="#">Seguir</a></li>
-            <li><a href="#">Suporte</a></li>
-            <li><a href="#">Perguntas frequentes</a></li>
+            <li>
+              <a
+                href="https://www.instagram.com/agencia.storylab?igsh=MXAweXRqc3U0Z3B0Mg=="
+                target="_blank"
+                >Seguir</a
+              >
+            </li>
+            <li>
+              <a href="https://wa.me/5592991770223" target="_blank">Suporte</a>
+            </li>
+            <li><a href="#" target="_blank">Perguntas frequentes</a></li>
           </ul>
           <ul>
             <h3>Empresa</h3>
-            <li><a href=".home">Sobre nós</a></li>
-            <li><a href="#">Contate-nos</a></li>
-            <li><a href=".Budget">Planos e Preços</a></li>
-            <li><a href=".home">Novidades</a></li>
+            <li><a href="#home">Sobre nós</a></li>
+            <li>
+              <a href="https://wa.me/5592991770223" target="_blank"
+                >Contate-nos</a
+              >
+            </li>
+            <li><a href="#home">Planos e Preços</a></li>
+            <li><a href="#home">Novidades</a></li>
           </ul>
         </div>
       </footer>

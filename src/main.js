@@ -2,3 +2,4 @@
 
 import "./scripts/top.js";
 import "./scripts/nav.js";
+import "./scripts/menu.js";

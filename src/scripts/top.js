@@ -6,7 +6,6 @@ const secGaleria = document.querySelector('.galeria')
 const sections = [secVideos, secHistory, secGaleria]
 
 function showSection(index) {
-  event.preventDefault()
   sections.forEach(sec => sec.style.display = 'none')
   sections[index].style.display = 'flex'
 
