@@ -3,9 +3,9 @@ const plan = {
     "Produção Audiovisuais",
     "Cards para redes sociais",
     "Registros fotográficos",
-    "1 carrosel para instagram",
     "Gestão de rede social",
     "Gravação com drone",
+    "1 carrosel para instagram",
     "Animação de elementos gráficos",
     "Animação de logo",
   ],
@@ -13,15 +13,25 @@ const plan = {
 
 const core = {
   serviceRange: [0, 3],
+  crossRange: [3, 5],
   getServices() {
     const [start, end] = this.serviceRange;
+    return plan.service.slice(start, end);
+  },
+  getCrossServices() {
+    const [start, end] = this.crossRange;
     return plan.service.slice(start, end);
   },
 };
 const pro = {
   serviceRange: [0, 4],
+  crossRange: [4, 7],
   getServices() {
     const [start, end] = this.serviceRange;
+    return plan.service.slice(start, end);
+  },
+  getCrossServices() {
+    const [start, end] = this.crossRange;
     return plan.service.slice(start, end);
   },
 };
@@ -29,9 +39,12 @@ const elite = {
   serviceRange: [0, 7],
   getServices() {
     const [start, end] = this.serviceRange;
-    return plan.service.slice(start, end);
+    return plan.service.slice(start, end + 1);
   },
 };
-console.log("Core:" + core.getServices());
-console.log("Pro:" + pro.getServices());
-console.log("Elite:" + elite.getServices());
+
+console.log(core.getServices(), core.getCrossServices());
+console.log(pro.getServices(), pro.getCrossServices());
+console.log(elite.getServices());
+
+export { core, pro, elite };

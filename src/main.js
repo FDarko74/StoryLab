@@ -12,5 +12,6 @@ import "./style/top.css";
 import "./scripts/top.js";
 import "./scripts/nav.js";
 import "./scripts/menu.js";
-import "./scripts/buttons.js";
 import "./scripts/plans.js";
+import "./scripts/show.js";
+import "./scripts/buttons.js";
