@@ -13,3 +13,4 @@ import "./scripts/top.js";
 import "./scripts/nav.js";
 import "./scripts/menu.js";
 import "./scripts/buttons.js";
+import "./scripts/plans.js";
