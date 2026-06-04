@@ -53,3 +53,10 @@
     text-decoration: underline;
     font: bolder;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .Members{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

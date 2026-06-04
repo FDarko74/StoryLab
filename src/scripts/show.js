@@ -8,8 +8,7 @@ function showServices() {
   Core.innerHTML = "";
   Pro.innerHTML = "";
   Elite.innerHTML = "";
-
-  function corePlan() {
+  try {
     const div = document.createElement("div");
     const img = document.createElement("img");
     const title = document.createElement("h3");
@@ -54,8 +53,11 @@ function showServices() {
 
       ul.appendChild(li);
     });
+  } catch (error) {
+    console.error("Erro ao exibir os serviços do plano Core:", error);
   }
-  function proPlan() {
+
+  try {
     const div = document.createElement("div");
     const img = document.createElement("img");
     const title = document.createElement("h3");
@@ -100,8 +102,10 @@ function showServices() {
 
       ul.appendChild(li);
     });
+  } catch (error) {
+    console.error("Erro ao exibir os serviços do plano Pro:", error);
   }
-  function elitePlan() {
+  try {
     const div = document.createElement("div");
     const img = document.createElement("img");
     const title = document.createElement("h3");
@@ -136,9 +140,9 @@ function showServices() {
 
       ul.appendChild(li);
     });
+  } catch (error) {
+    console.error("Erro ao exibir os serviços do plano Elite:", error);
   }
-
-  return (corePlan(), proPlan(), elitePlan());
 }
 
 showServices();

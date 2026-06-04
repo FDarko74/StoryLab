@@ -15,6 +15,10 @@
   border-radius: 100px;
 }
 
+.navbar button {
+  display: none;
+}
+
 .navbar ul {
   display: inherit;
   align-items: center;
@@ -81,4 +85,69 @@ a {
 
 .button-active {
   transition: all 0.3s ease;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .navbar {
+    width: 90vw;
+    padding: 0.3rem 1.25rem;
+    left: 5%;
+  }
+  .navbar img {
+    width: 4rem;
+  }
+
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    right: 1rem;
+    top: 0.5rem;
+    transform: translateY(-25%);
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
+    background: white;
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    padding: 0.5rem 2.5rem;
+    animation: transitionMenu 0.5s forwards;
+  }
+
+  #menu.active {
+    display: flex;
+  }
+
+  #social-icons {
+    display: none;
+    position: absolute;
+    padding: 0.5rem 2.5rem;
+    animation: transitionMenu 0.5s forwards;
+
+    img {
+      width: 2rem;
+      transform: translateX(1.3rem);
+    }
+  }
+
+  #social-icons.active {
+    display: flex;
+  }
+}
+@keyframes transitionMenu {
+  from {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(4%);
+  }
 }

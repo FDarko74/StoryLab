@@ -2,6 +2,14 @@ const inst = document.querySelector("#instagram");
 const face = document.querySelector("#facebook");
 const what = document.querySelector("#whatsapp");
 const tik = document.querySelector("#tiktok");
+const menuToggle = document.querySelector("#menu-toggle");
+const menu = document.querySelector("#menu");
+const social = document.querySelector("#social-icons");
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  social.classList.toggle("active");
+});
 
 inst.addEventListener("click", async (event) => {
   event.preventDefault();

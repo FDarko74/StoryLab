@@ -5,7 +5,7 @@ const plan = {
     "Registros fotográficos",
     "Gestão de rede social",
     "Gravação com drone",
-    "1 carrosel para instagram",
+    "1 carrossel para instagram",
     "Animação de elementos gráficos",
     "Animação de logo",
   ],
@@ -36,15 +36,11 @@ const pro = {
   },
 };
 const elite = {
-  serviceRange: [0, 7],
+  serviceRange: [0, 8],
   getServices() {
     const [start, end] = this.serviceRange;
-    return plan.service.slice(start, end + 1);
+    return plan.service.slice(start, end);
   },
 };
-
-console.log(core.getServices(), core.getCrossServices());
-console.log(pro.getServices(), pro.getCrossServices());
-console.log(elite.getServices());
 
 export { core, pro, elite };

@@ -55,3 +55,9 @@ footer div ul li a {
   font: var(--font-a);
   text-decoration: none;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  footer {
+    display: none;
+  }
+}

@@ -193,12 +193,12 @@ span {
   padding: 0.8rem 1.5rem;
 }
 
-.personalize{
+.personalize {
   background: linear-gradient(90deg, #974df9 0%, #5c30df 100%);
   border: none;
 }
 
-.personalize p{
+.personalize p {
   font: var(--font-h3);
   color: var(--BackC);
   padding: 0.8rem 1.5rem;
@@ -206,4 +206,39 @@ span {
 
 .personalize:hover {
   box-shadow: 0 5px 10px var(--BackC);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .Budget {
+    padding: 1rem;
+  }
+
+  .Budget h2 {
+    font: var(--font-plan-mobile);
+    padding-inline: 1.5rem;
+    top: 1rem;
+  }
+  .title{
+    margin-inline: 1.5rem;
+  }
+  .title h1 {
+    font: var(--font-h1-mobile);
+    text-align: center;
+  }
+  .title img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .plans {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .item img{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  #mouse {
+    display: none;
+  }
 }

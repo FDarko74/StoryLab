@@ -9,7 +9,7 @@
   gap: 1.5rem;
 }
 
-.logo {
+#logo {
   width: 50vw;
 }
 
@@ -45,4 +45,26 @@
   padding: 0.5rem 0.9rem;
   border-radius: 28px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .home {
+    margin: 10% 0;
+  }
+
+  #logo {
+    width: 70vw;
+  }
+
+  #icons {
+    width: 40vw;
+    height: auto;
+    transform: translate(-5px, -20px);
+  }
+  .nav-pills {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90vw;
+    border-radius: 20px;
+  }
 }
